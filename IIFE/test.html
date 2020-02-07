@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <span>This page is shown to understand '$(document).ready()' in jQuery and IIFE (Immediately Invoked Function
+        Expression) <br /><span>
+            <p>
+                If you see this line, it means DOM hierarchy has been loaded. NOW loading jQuery from server and execute
+                JS...<br /><br />
+            </p>
+            <span>加载此网页后你会看到如下结果，同时在console可以看到日志 <br /><span>
+                    <p>
+                        This page is shown to understand '$(document).ready()' in jQuery and IIFE (Immediately Invoked
+                        Function Expression)
+                        If you see this line, it means DOM hierarchy has been loaded. NOW loading jQuery from server and
+                        execute JS...
+
+                        $(document).ready(function(){}; is now been executed!!!
+
+                        $(function(){}); is now been executed!!!
+
+                        $(function(){}); is now been executed!!!
+                    </p>
+
+                    <script src="http://code.jquery.com/jquery-latest.js"></script>
+                    <script src="test1.js"></script>
+                    <script src="test2.js"></script>
+                    <script src="IIFE.js"></script>
+</body>
+
+</html>
