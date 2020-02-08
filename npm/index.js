@@ -1,8 +1,8 @@
-const moment = require("moment") //require 是 AMD规范引入方式;require是运行时调用，所以require理论上可以运用在代码的任何地方
-const m1 = require("./modules/module1.js")
-const m2 = require("./modules/module2.js")
-const m3 = require("./modules/module3.js")
-const m4 = require("./modules/module4.js")
+const moment = require("_moment@2.24.0@moment") //require 是 AMD规范引入方式;require是运行时调用，所以require理论上可以运用在代码的任何地方
+const m1 = require("../modules/module1.js")
+const m2 = require("../modules/module2.js")
+const m3 = require("../modules/module3.js")
+const m4 = require("../modules/module4.js")
 
 
 
@@ -12,7 +12,6 @@ let today = moment().format("YYYY-MM-DD")
 console.log(today)
 
 function main() {
-    console.log("today is " + today)
 
 
     console.log("m1="+JSON.stringify(m1))//m1={"a":123,"PI":3.14,"person":{"name":"xiaoming","age":18}}
@@ -24,6 +23,7 @@ function main() {
 
     let xh4=new m4.xx_Person("xiaohong")
     console.log("xh="+xh4.name) //xh=xiaohong
+
 }
 
 
